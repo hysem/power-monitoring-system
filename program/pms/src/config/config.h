@@ -1,0 +1,47 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#include <Arduino.h>
+
+#define LCD_RS 7
+#define LCD_EN 6
+
+#define LCD_D4 5
+#define LCD_D5 4
+#define LCD_D6 3
+#define LCD_D7 2
+
+#define LCD_COLS 16
+#define LCD_ROWS 2
+
+#define ADC_REFERENCE_VOLTAGE 5
+
+#define TRANSFORMER_PRIMARY_VOLTAGE 230
+#define TRANSFORMER_SECONDARY_VOLTAGE 12
+
+#define VOLTMETER_RESISTOR_LARGE 10
+#define VOLTMETER_RESISTOR_SMALL 3.3
+#define VOLTMETER_INPUT_PIN A0
+#define VOLTMETER_SAMPLES 200
+#define VOLTMETER_INTERVAL 1
+#define VOLTMETER_OFFSET 0
+
+#define AMMETER_INPUT_PIN A1
+#define AMMETER_SAMPLES 200
+#define AMMETER_INTERVAL 1
+#define AMMETER_OFFSET -0.13
+#define AMMETER_SENSITIVITY 0.185 // 185mV/A for 5A Sensor, 100mV/A for 20A Sensor and 66 mV/A for 30A Sensor
+
+#define PFMETER_SAMPLES 200
+#define PFMETER_INTERVAL 1
+
+#define RELAY_PIN 13
+#define MAX_CURRENT_LIMIT 4
+#define FIX_BTN_PIN 8
+#define SHORT_CIRCUIT_BTN_PIN 9
+
+#define SMS_NUMBER "+91xxxxxxxxxx"
+#define GSM_RX_PIN 10
+#define GSM_TX_PIN 11
+
+#endif
